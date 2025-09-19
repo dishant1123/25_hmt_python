@@ -49,26 +49,27 @@ print(a)
 print("names : ",a.dtype.names)
 """
 
-fit =np.genfromtxt("fitbit_user.txt",dtype="str",delimiter=",",skip_header=1)
+"""fit =np.genfromtxt("fitbit_user.txt",dtype="str",delimiter=",",skip_header=1)
 print(fit)
-
+"""
 # len : 
-len_of_fit =len(fit)
+"""len_of_fit =len(fit)
 print(len_of_fit)
-
+"""
 # shape : 
-print(fit.ndim)  # number of axis  =2 
+"""print(fit.ndim)  # number of axis  =2 
 print(fit.shape)  # array  (96,6)
 
 print(fit[0])
 print(fit[0 :5]) 
-
+"""
 """
 task  :1 
 
 Print number of days user was sedantary (< 5000 steps), low active (5000 to 7499 steps), somewhat active (7500 to 9999 steps) and active (10k to 12499 steps).
 """
 
+"""
 steps =fit[ :,1]
 steps =steps.astype(int)
 print(steps)
@@ -81,3 +82,4 @@ print(sedantary)
 print(lowactive)
 print(somewhateactive)
 print(active)
+"""
