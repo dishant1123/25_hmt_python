@@ -1,5 +1,5 @@
 import pandas as pd 
-
+import numpy as np 
 """
 df1=pd.DataFrame([
     ["guru",20,900000],
@@ -48,4 +48,22 @@ print(t2)
 # mckinsey .csv : 
 
 df = pd.read_csv("mckinsey.csv")
+# print(df)
+
+# new col add in csv : 
+
+"""df["next_yr_survey"]=df["year"] +3 
+print(df)
+
+df["GDP"] =df["gdp_cap"] * df["population"]
+print(df)
+"""
+
+df["new_index"]=np.arange(5,1709)
+print(df)
+
+print(df.index)  #  ==> index : start  stop  step 
+print(df.index.values)   #  ==> print  ==> array  
+
+df.index = np.arange(1,1705,dtype=float)
 print(df)
