@@ -59,7 +59,7 @@ df["GDP"] =df["gdp_cap"] * df["population"]
 print(df)
 """
 
-df["new_index"]=np.arange(5,1709)
+"""df["new_index"]=np.arange(5,1709)
 print(df)
 
 print(df.index)  #  ==> index : start  stop  step 
@@ -67,3 +67,5 @@ print(df.index.values)   #  ==> print  ==> array
 
 df.index = np.arange(1,1705,dtype=float)
 print(df)
+"""
+
