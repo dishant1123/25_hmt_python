@@ -14,4 +14,13 @@ india =temp.loc["India"]
 # prit only  specific  year  : 
 
 yr = df.loc[df["year"]==2007]
-print(yr)
+# print(yr)
+
+# drop  :  delete  table row  or  col 
+
+# a= df.drop(2,axis=0)
+# a=df.drop("year",axis=1)
+a=df.drop(["year","population"],axis=1)
+print(a)
+
+# print  first 20  row  == >  2,3,4,6,8,10   ==>  row  delete  
