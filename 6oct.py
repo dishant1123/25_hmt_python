@@ -24,3 +24,9 @@ a=df.drop(["year","population"],axis=1)
 print(a)
 
 # print  first 20  row  == >  2,3,4,6,8,10   ==>  row  delete  
+
+b =df.drop([2,3,4,6,8,10]).head(20)
+print(b)
+
+# print last 20  row ==> 1701  1702  1703  1699  ==>  row  delete 
+
