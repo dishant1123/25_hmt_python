@@ -37,3 +37,4 @@ print("fill the missing value with some value :\n",df.fillna({
 # remove duplicate : 
 
 # print("remove duplicate value :\n",df.drop_duplicates())
+
